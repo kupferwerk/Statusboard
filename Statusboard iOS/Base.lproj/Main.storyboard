@@ -111,7 +111,7 @@
                                                 </constraints>
                                                 <state key="normal" title="Edit"/>
                                                 <connections>
-                                                    <segue destination="8kk-jd-68q" kind="presentation" id="Qh2-rC-XMH"/>
+                                                    <segue destination="8kk-jd-68q" kind="show" id="Qh2-rC-XMH"/>
                                                 </connections>
                                             </button>
                                         </subviews>
