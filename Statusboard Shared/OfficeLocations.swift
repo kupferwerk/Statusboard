@@ -30,5 +30,13 @@ public enum OfficeLocations {
         return CLCircularRegion(center: geolocation, radius: 75, identifier: name)
     }
     
+    static func officeLocationForRegionWithIdentifier(identifier: String) -> OfficeLocations? {
+        switch identifier {
+        case Ratisbon.name: return Ratisbon
+        case Munich.name:   return Munich
+        default:            return nil
+        }
+    }
+    
     static let allValues = [Ratisbon, Munich]
 }

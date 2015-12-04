@@ -33,11 +33,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 extension AppDelegate: CLLocationManagerDelegate {
     func locationManager(manager: CLLocationManager, didEnterRegion region: CLRegion) {
-        // TODO: Handle Region Event
+        
     }
     
     func locationManager(manager: CLLocationManager, didExitRegion region: CLRegion) {
-        // TODO: Handle Region Event
+        
     }
 }
 
