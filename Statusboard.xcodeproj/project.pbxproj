@@ -11,6 +11,7 @@
 		4F198862F7E5096E3BEB912F /* Pods_Statusboard_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC240BBF7BAEB9EC3993A48 /* Pods_Statusboard_tvOS.framework */; };
 		520CEFDB1C12290E001C2C8B /* OfficeLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CEFDA1C12290E001C2C8B /* OfficeLocations.swift */; };
 		520CEFDC1C122A5E001C2C8B /* OfficeLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CEFDA1C12290E001C2C8B /* OfficeLocations.swift */; };
+		520CEFE21C1242D8001C2C8B /* OfficeLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CEFE11C1242D8001C2C8B /* OfficeLocationManager.swift */; };
 		52A105C11C12096700D07AA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A105C01C12096700D07AA7 /* AppDelegate.swift */; };
 		52A105C31C12096700D07AA7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A105C21C12096700D07AA7 /* ProfileViewController.swift */; };
 		52A105C61C12096700D07AA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A105C41C12096700D07AA7 /* Main.storyboard */; };
@@ -46,6 +47,7 @@
 		3DC240BBF7BAEB9EC3993A48 /* Pods_Statusboard_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Statusboard_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		518E37402788759718BA7DC1 /* Pods_Statusboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Statusboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		520CEFDA1C12290E001C2C8B /* OfficeLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficeLocations.swift; sourceTree = "<group>"; };
+		520CEFE11C1242D8001C2C8B /* OfficeLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficeLocationManager.swift; sourceTree = "<group>"; };
 		52A105BE1C12096700D07AA7 /* Statusboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Statusboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A105C01C12096700D07AA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A105C21C12096700D07AA7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 		52A105BF1C12096700D07AA7 /* Statusboard iOS */ = {
 			isa = PBXGroup;
 			children = (
+				520CEFE11C1242D8001C2C8B /* OfficeLocationManager.swift */,
 				52A105C01C12096700D07AA7 /* AppDelegate.swift */,
 				52A105C21C12096700D07AA7 /* ProfileViewController.swift */,
 				52A105D61C120B4300D07AA7 /* EmployeeCollectionViewCell.xib */,
@@ -334,7 +337,11 @@
 				52A105D31C120B0600D07AA7 /* Reusable.swift in Sources */,
 				520CEFDB1C12290E001C2C8B /* OfficeLocations.swift in Sources */,
 				52A105C31C12096700D07AA7 /* ProfileViewController.swift in Sources */,
+<<<<<<< Updated upstream
 				6A9A7AF21C12335D00A9B0AB /* SettingsViewController.swift in Sources */,
+=======
+				520CEFE21C1242D8001C2C8B /* OfficeLocationManager.swift in Sources */,
+>>>>>>> Stashed changes
 				52A105C11C12096700D07AA7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -390,6 +397,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kupferwerk.Statusboard;
 				PRODUCT_NAME = Statusboard;
+				PROVISIONING_PROFILE = "96d3d1a2-f5ff-439f-970c-330a7359ec13";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -405,6 +413,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.kupferwerk.Statusboard;
 				PRODUCT_NAME = Statusboard;
+				PROVISIONING_PROFILE = "96d3d1a2-f5ff-439f-970c-330a7359ec13";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
