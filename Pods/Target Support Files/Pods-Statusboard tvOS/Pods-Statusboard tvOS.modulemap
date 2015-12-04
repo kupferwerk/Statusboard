@@ -1,6 +1,0 @@
-framework module Pods_Statusboard_tvOS {
-  umbrella header "Pods-Statusboard tvOS-umbrella.h"
-
-  export *
-  module * { export * }
-}

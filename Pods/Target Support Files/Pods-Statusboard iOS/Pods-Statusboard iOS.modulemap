@@ -1,0 +1,6 @@
+framework module Pods_Statusboard_iOS {
+  umbrella header "Pods-Statusboard iOS-umbrella.h"
+
+  export *
+  module * { export * }
+}
