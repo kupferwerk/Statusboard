@@ -14,15 +14,17 @@ public enum OfficeLocations {
     
     var name: String {
         switch self {
-        case .Ratisbon: return "Regensburg"
-        case .Munich: return "München"
+        case Ratisbon: return "Regensburg"
+        case Munich: return "München"
         }
     }
     
     var geolocation: CLLocationCoordinate2D {
         switch self {
-        case .Ratisbon: return CLLocationCoordinate2D(latitude: 49.01700599999999, longitude: 12.121948299999985)
-        case .Munich: return CLLocationCoordinate2D(latitude: 48.1524523, longitude: 11.59670779999999)
+        case Ratisbon: return CLLocationCoordinate2D(latitude: 49.01700599999999, longitude: 12.121948299999985)
+        case Munich: return CLLocationCoordinate2D(latitude: 48.1524523, longitude: 11.59670779999999)
         }
     }
+    
+    static let allValues = [Ratisbon, Munich]
 }
