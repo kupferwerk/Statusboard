@@ -337,11 +337,8 @@
 				52A105D31C120B0600D07AA7 /* Reusable.swift in Sources */,
 				520CEFDB1C12290E001C2C8B /* OfficeLocations.swift in Sources */,
 				52A105C31C12096700D07AA7 /* ProfileViewController.swift in Sources */,
-<<<<<<< Updated upstream
 				6A9A7AF21C12335D00A9B0AB /* SettingsViewController.swift in Sources */,
-=======
 				520CEFE21C1242D8001C2C8B /* OfficeLocationManager.swift in Sources */,
->>>>>>> Stashed changes
 				52A105C11C12096700D07AA7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
