@@ -24,6 +24,8 @@
 		5AADB3BA1C11DDA500DE19AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AADB3B91C11DDA500DE19AE /* ViewController.swift */; };
 		5AADB3BD1C11DDA500DE19AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AADB3BB1C11DDA500DE19AE /* Main.storyboard */; };
 		5AADB3BF1C11DDA500DE19AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AADB3BE1C11DDA500DE19AE /* Assets.xcassets */; };
+		6A9A7AF21C12335D00A9B0AB /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A9A7AF11C12335D00A9B0AB /* SettingsViewController.swift */; };
+		6A9A7AF41C12337F00A9B0AB /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A9A7AF31C12337F00A9B0AB /* SettingsViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -61,6 +63,8 @@
 		5AADB3BE1C11DDA500DE19AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AADB3C01C11DDA500DE19AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5DDFD7E90C441E35677052A6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		6A9A7AF11C12335D00A9B0AB /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		6A9A7AF31C12337F00A9B0AB /* SettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
 		A1CD9FC9F66F1CF70F644878 /* Pods-Statusboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statusboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Statusboard/Pods-Statusboard.release.xcconfig"; sourceTree = "<group>"; };
 		D5E5C9E50DC54EA837DDC7C1 /* Pods-Statusboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statusboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Statusboard/Pods-Statusboard.debug.xcconfig"; sourceTree = "<group>"; };
 		DDA97C26559CC335B4F80859 /* Pods-Statusboard tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statusboard tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Statusboard tvOS/Pods-Statusboard tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +100,8 @@
 				52A105D61C120B4300D07AA7 /* EmployeeCollectionViewCell.xib */,
 				52A105D41C120B2F00D07AA7 /* EmployeeCollectionViewCell.swift */,
 				52A105C41C12096700D07AA7 /* Main.storyboard */,
+				6A9A7AF31C12337F00A9B0AB /* SettingsViewController.storyboard */,
+				6A9A7AF11C12335D00A9B0AB /* SettingsViewController.swift */,
 				52A105C71C12096700D07AA7 /* Assets.xcassets */,
 				52A105C91C12096700D07AA7 /* LaunchScreen.storyboard */,
 				52A105CC1C12096700D07AA7 /* Info.plist */,
@@ -254,6 +260,7 @@
 			files = (
 				52A105CB1C12096700D07AA7 /* LaunchScreen.storyboard in Resources */,
 				52A105C81C12096700D07AA7 /* Assets.xcassets in Resources */,
+				6A9A7AF41C12337F00A9B0AB /* SettingsViewController.storyboard in Resources */,
 				52A105D91C120C9600D07AA7 /* EmployeeCollectionViewCell.xib in Resources */,
 				52A105C61C12096700D07AA7 /* Main.storyboard in Resources */,
 			);
@@ -327,6 +334,7 @@
 				52A105D31C120B0600D07AA7 /* Reusable.swift in Sources */,
 				520CEFDB1C12290E001C2C8B /* OfficeLocations.swift in Sources */,
 				52A105C31C12096700D07AA7 /* ProfileViewController.swift in Sources */,
+				6A9A7AF21C12335D00A9B0AB /* SettingsViewController.swift in Sources */,
 				52A105C11C12096700D07AA7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
