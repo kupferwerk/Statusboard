@@ -21,9 +21,13 @@ public enum OfficeLocations {
     
     var geolocation: CLLocationCoordinate2D {
         switch self {
-        case Ratisbon: return CLLocationCoordinate2D(latitude: 49.01700599999999, longitude: 12.121948299999985)
-        case Munich: return CLLocationCoordinate2D(latitude: 48.1524523, longitude: 11.59670779999999)
+        case Ratisbon: return CLLocationCoordinate2D(latitude: 49.01705, longitude: 12.1218)
+        case Munich: return CLLocationCoordinate2D(latitude: 48.1520, longitude: 11.5960)
         }
+    }
+    
+    var region: CLCircularRegion {
+        return CLCircularRegion(center: geolocation, radius: 75, identifier: name)
     }
     
     static let allValues = [Ratisbon, Munich]
