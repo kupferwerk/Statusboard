@@ -8,45 +8,33 @@
 
 import UIKit
 import Firebase
+import RxSwift
+import RxCocoa
 
 class AuthViewController: UIViewController {
-    
-    let ref = Firebase(url:"https://shining-heat-4070.firebaseio.com")
 
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var createButton: UIButton!
     
-    @IBAction func createAccount(sender: UIButton) {
+    let firebaseService = FirebaseService()
+    var disposeBag = DisposeBag()
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
         
-        ref.createUser(emailTextField.text, password: passwordTextField.text, withValueCompletionBlock: {
-            error, userData in
-            if (error != nil) {
-                print(error)
+        combineLatest(emailTextField.rx_text, passwordTextField.rx_text) { ($0, $1) }
+            .sampleLatest(createButton.rx_tap)
+            .map { (email, password) in
+                return self.firebaseService.createUserObservable(email, password: password)
             }
-            
-            if (userData != nil) {
-                print(userData)
-            }
-        })
-        
-        ref.authUser(emailTextField.text, password: passwordTextField.text) { error, authData in
-            if error != nil {
-                
-            }
-            else {
-                print(authData.token)
-                print(authData.uid)
-                
-                guard let email = authData.providerData["email"] as? String else { return }
-                
-                let newUser = [
-                    "email": email
-                ]
-                
-                self.ref.childByAppendingPath("users")
-                        .childByAppendingPath(authData.uid).setValue(newUser)
-            }
-        }
+            .switchLatest()
+            .subscribe(onNext: { (next) -> Void in
+                    print(next)
+                },
+                onError: { (error) -> Void in
+                    print(error)
+                })
+            .addDisposableTo(disposeBag)
     }
 }

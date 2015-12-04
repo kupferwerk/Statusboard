@@ -27,6 +27,8 @@
 		5AADB3D51C12240E00DE19AE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AADB3D21C12240E00DE19AE /* AuthViewController.swift */; };
 		5AADB3D61C12240E00DE19AE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AADB3D31C12240E00DE19AE /* LoginViewController.swift */; };
 		5AADB3D91C12322B00DE19AE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AADB3D81C12322B00DE19AE /* User.swift */; };
+		86C669B81C1245050028E1CB /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C669B71C1245050028E1CB /* FirebaseService.swift */; };
+		86C669B91C1245050028E1CB /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C669B71C1245050028E1CB /* FirebaseService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -69,6 +71,7 @@
 		5DDFD7E90C441E35677052A6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		668672ADD6462AE45914EACF /* Pods_Statusboard_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Statusboard_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BED482CB135771C68FDD6AC /* Pods-Statusboard iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statusboard iOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Statusboard iOS/Pods-Statusboard iOS.debug.xcconfig"; sourceTree = "<group>"; };
+		86C669B71C1245050028E1CB /* FirebaseService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
 		8D1B87BFE88B194070DFA38B /* Pods-Statusboard iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statusboard iOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Statusboard iOS/Pods-Statusboard iOS.release.xcconfig"; sourceTree = "<group>"; };
 		A1CD9FC9F66F1CF70F644878 /* Pods-Statusboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statusboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Statusboard/Pods-Statusboard.release.xcconfig"; sourceTree = "<group>"; };
 		D5E5C9E50DC54EA837DDC7C1 /* Pods-Statusboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statusboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Statusboard/Pods-Statusboard.debug.xcconfig"; sourceTree = "<group>"; };
@@ -102,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				5AADB3D71C12241800DE19AE /* Auth */,
+				86C669B71C1245050028E1CB /* FirebaseService.swift */,
 				52A105C01C12096700D07AA7 /* AppDelegate.swift */,
 				52A105C21C12096700D07AA7 /* ProfileViewController.swift */,
 				52A105D61C120B4300D07AA7 /* EmployeeCollectionViewCell.xib */,
@@ -399,6 +403,7 @@
 				5AADB3D61C12240E00DE19AE /* LoginViewController.swift in Sources */,
 				52A105D81C120B4B00D07AA7 /* EmployeeCollectionViewCell.swift in Sources */,
 				52A105D31C120B0600D07AA7 /* Reusable.swift in Sources */,
+				86C669B91C1245050028E1CB /* FirebaseService.swift in Sources */,
 				5AADB3D51C12240E00DE19AE /* AuthViewController.swift in Sources */,
 				52A105C31C12096700D07AA7 /* ProfileViewController.swift in Sources */,
 				52A105C11C12096700D07AA7 /* AppDelegate.swift in Sources */,
@@ -413,6 +418,7 @@
 				52A105D21C120A9800D07AA7 /* Reusable.swift in Sources */,
 				5AADB3BA1C11DDA500DE19AE /* ViewController.swift in Sources */,
 				5AADB3B81C11DDA500DE19AE /* AppDelegate.swift in Sources */,
+				86C669B81C1245050028E1CB /* FirebaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

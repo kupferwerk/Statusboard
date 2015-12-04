@@ -86,12 +86,14 @@ strip_invalid_archs() {
 if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "Pods-Statusboard iOS/Firebase.framework"
   install_framework "Pods-Statusboard iOS/Locksmith.framework"
+  install_framework "Pods-Statusboard iOS/RxBlocking.framework"
   install_framework "Pods-Statusboard iOS/RxCocoa.framework"
   install_framework "Pods-Statusboard iOS/RxSwift.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "Pods-Statusboard iOS/Firebase.framework"
   install_framework "Pods-Statusboard iOS/Locksmith.framework"
+  install_framework "Pods-Statusboard iOS/RxBlocking.framework"
   install_framework "Pods-Statusboard iOS/RxCocoa.framework"
   install_framework "Pods-Statusboard iOS/RxSwift.framework"
 fi

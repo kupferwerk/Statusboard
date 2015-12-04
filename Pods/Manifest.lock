@@ -1,20 +1,24 @@
 PODS:
   - Firebase (2.4.3)
   - Locksmith (2.0.2)
-  - RxCocoa (1.9.1):
-    - RxSwift (~> 1.0)
-  - RxSwift (1.9.1)
+  - RxBlocking (2.0.0-beta.3):
+    - RxSwift (~> 2.0.0-beta)
+  - RxCocoa (2.0.0-beta.3):
+    - RxSwift (~> 2.0.0-beta)
+  - RxSwift (2.0.0-beta.3)
 
 DEPENDENCIES:
   - Firebase (>= 2.4.3)
   - Locksmith
-  - RxCocoa
-  - RxSwift
+  - RxBlocking (~> 2.0.0-beta)
+  - RxCocoa (~> 2.0.0-beta)
+  - RxSwift (~> 2.0.0-beta)
 
 SPEC CHECKSUMS:
   Firebase: 48179995b561e2262c5d4060ecdffca45fbbff8b
   Locksmith: 7f2b68448449a7712348f9a4ed60604c1cc8dfa6
-  RxCocoa: b6665f77023bbdf428b92aa3338078e1e6bac39a
-  RxSwift: 546de2efb7f97f748f6c637d00846d4dd8600f62
+  RxBlocking: 331f8bdedf77198f8ff1a37f09c492f1f4f631e5
+  RxCocoa: 1472006304b296d03c847f78b21384523cc4902e
+  RxSwift: 19fbe885b404d1d36d42ac8535134739a9b42952
 
 COCOAPODS: 0.39.0
