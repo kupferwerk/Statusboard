@@ -62,12 +62,9 @@
 		5AADB3BC1C11DDA500DE19AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5AADB3BE1C11DDA500DE19AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5AADB3C01C11DDA500DE19AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-<<<<<<< Updated upstream
 		5DDFD7E90C441E35677052A6 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-=======
 		6A9A7AF11C12335D00A9B0AB /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		6A9A7AF31C12337F00A9B0AB /* SettingsViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsViewController.storyboard; sourceTree = "<group>"; };
->>>>>>> Stashed changes
 		A1CD9FC9F66F1CF70F644878 /* Pods-Statusboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statusboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Statusboard/Pods-Statusboard.release.xcconfig"; sourceTree = "<group>"; };
 		D5E5C9E50DC54EA837DDC7C1 /* Pods-Statusboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statusboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Statusboard/Pods-Statusboard.debug.xcconfig"; sourceTree = "<group>"; };
 		DDA97C26559CC335B4F80859 /* Pods-Statusboard tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statusboard tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Statusboard tvOS/Pods-Statusboard tvOS.release.xcconfig"; sourceTree = "<group>"; };
