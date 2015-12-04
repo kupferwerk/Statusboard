@@ -13,9 +13,9 @@ public protocol Reusable {
 }
 
 extension Reusable {
-    static var reuseId: String {
+    public static var reuseId: String {
         return String(self).componentsSeparatedByString(".").last!
     }
 }
 
-public extension UICollectionViewCell: Reusable { }
+extension UICollectionViewCell: Reusable { }
