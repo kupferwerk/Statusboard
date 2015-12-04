@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		33D8D04D5A66DDDC56E411F6 /* Pods_Statusboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 518E37402788759718BA7DC1 /* Pods_Statusboard.framework */; };
+		4F198862F7E5096E3BEB912F /* Pods_Statusboard_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC240BBF7BAEB9EC3993A48 /* Pods_Statusboard_tvOS.framework */; };
 		52A105C11C12096700D07AA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A105C01C12096700D07AA7 /* AppDelegate.swift */; };
 		52A105C31C12096700D07AA7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A105C21C12096700D07AA7 /* ProfileViewController.swift */; };
 		52A105C61C12096700D07AA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A105C41C12096700D07AA7 /* Main.storyboard */; };
@@ -39,6 +39,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		3DC240BBF7BAEB9EC3993A48 /* Pods_Statusboard_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Statusboard_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		518E37402788759718BA7DC1 /* Pods_Statusboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Statusboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A105BE1C12096700D07AA7 /* Statusboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Statusboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A105C01C12096700D07AA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -58,6 +59,8 @@
 		5AADB3C01C11DDA500DE19AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1CD9FC9F66F1CF70F644878 /* Pods-Statusboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statusboard.release.xcconfig"; path = "Pods/Target Support Files/Pods-Statusboard/Pods-Statusboard.release.xcconfig"; sourceTree = "<group>"; };
 		D5E5C9E50DC54EA837DDC7C1 /* Pods-Statusboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statusboard.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Statusboard/Pods-Statusboard.debug.xcconfig"; sourceTree = "<group>"; };
+		DDA97C26559CC335B4F80859 /* Pods-Statusboard tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statusboard tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-Statusboard tvOS/Pods-Statusboard tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		E4010921C1EDA3F4881D9D02 /* Pods-Statusboard tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Statusboard tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Statusboard tvOS/Pods-Statusboard tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33D8D04D5A66DDDC56E411F6 /* Pods_Statusboard.framework in Frameworks */,
+				4F198862F7E5096E3BEB912F /* Pods_Statusboard_tvOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +143,8 @@
 			children = (
 				D5E5C9E50DC54EA837DDC7C1 /* Pods-Statusboard.debug.xcconfig */,
 				A1CD9FC9F66F1CF70F644878 /* Pods-Statusboard.release.xcconfig */,
+				E4010921C1EDA3F4881D9D02 /* Pods-Statusboard tvOS.debug.xcconfig */,
+				DDA97C26559CC335B4F80859 /* Pods-Statusboard tvOS.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -148,6 +153,7 @@
 			isa = PBXGroup;
 			children = (
 				518E37402788759718BA7DC1 /* Pods_Statusboard.framework */,
+				3DC240BBF7BAEB9EC3993A48 /* Pods_Statusboard_tvOS.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -268,7 +274,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Statusboard/Pods-Statusboard-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Statusboard tvOS/Pods-Statusboard tvOS-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		C8BA4F7142BAD1C2CC4F03DE /* Check Pods Manifest.lock */ = {
@@ -298,7 +304,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Statusboard/Pods-Statusboard-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Statusboard tvOS/Pods-Statusboard tvOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -469,7 +475,7 @@
 		};
 		5AADB3C41C11DDA500DE19AE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5E5C9E50DC54EA837DDC7C1 /* Pods-Statusboard.debug.xcconfig */;
+			baseConfigurationReference = E4010921C1EDA3F4881D9D02 /* Pods-Statusboard tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -486,7 +492,7 @@
 		};
 		5AADB3C51C11DDA500DE19AE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A1CD9FC9F66F1CF70F644878 /* Pods-Statusboard.release.xcconfig */;
+			baseConfigurationReference = DDA97C26559CC335B4F80859 /* Pods-Statusboard tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -511,6 +517,7 @@
 				52A105CE1C12096700D07AA7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5AADB3AF1C11DDA500DE19AE /* Build configuration list for PBXProject "Statusboard" */ = {
 			isa = XCConfigurationList;
