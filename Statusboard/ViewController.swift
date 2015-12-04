@@ -7,19 +7,16 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        let myRootRef = Firebase(url:"https://shining-heat-4070.firebaseio.com")
+        myRootRef.setValue("Do you have data? You'll love Andy.")
     }
-
 
 }
 
