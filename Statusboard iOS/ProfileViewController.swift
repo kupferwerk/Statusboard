@@ -28,7 +28,7 @@ internal class ProfileViewController: UIViewController {
         super.viewWillAppear(animated)
         
         userNameTextField.text = user?.name
-        emailTextField.text = user?.email
+//        emailTextField.text = user?.email
     }
 
     //MARK: - IBActions

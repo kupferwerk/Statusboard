@@ -13,19 +13,19 @@ struct User {
     
     init?(snap: FDataSnapshot) {
         guard let json = snap.value as? Dictionary<String, AnyObject>,
-                email = json["email"] as? String,
+//                email = json["email"] as? String,
                 name = json["name"] as? String,
-                department = json["department"] as? String,
-                office = json["office"] as? String
+                department = json["department"] as? String
+//                office = json["office"] as? String
             else { return nil }
         
-        self.email = email
+//        self.email = email
         self.name = name
         self.department = department
-        self.office = office
+//        self.office = office
     }
     
-    let email, name, department, office: String
+    let name, department: String
 //    let available: Bool
 //    let lastCheckIn: NSDate
 //    let imageURL: NSURL
