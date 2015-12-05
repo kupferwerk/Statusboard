@@ -49,7 +49,7 @@ class FirebaseService {
     
     func updateUser(uid: String, user: Dictionary<String, String>) {
         self.ref.childByAppendingPath("users")
-            .childByAppendingPath(uid).setValue(user)
+                .childByAppendingPath(uid).setValue(user)
     }
     
 }

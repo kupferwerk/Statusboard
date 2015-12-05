@@ -8,9 +8,17 @@
 
 import UIKit
 import CoreLocation
+import Locksmith
+import Firebase
+import RxSwift
+import RxCocoa
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
+    
+    let usersRef = Firebase(url: "https://shining-heat-4070.firebaseio.com/users")
+    let firebaseService = FirebaseService()
+    var disposeBag = DisposeBag()
 
     var window: UIWindow?
     
@@ -26,7 +34,37 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes: .Alert, categories: nil))
         UIApplication.sharedApplication().cancelAllLocalNotifications()
         
+        window?.makeKeyAndVisible()
+        
+        firebaseService.ref.observeAuthEventWithBlock{ authData in
+            if authData != nil {
+                self.showProfileViewControllerWithUid(authData.uid)
+            }
+            else {
+                self.showAuthViewController()
+            }
+        }
+        
+        usersRef.observeEventType(.Value, withBlock: { [unowned self] snapshot in
+            print("snapshot: \(snapshot)")
+            
+            self.usersRef.removeAllObservers()
+        })
+
         return true
+    }
+    
+    func showAuthViewController() -> Void {
+        let storyboard = UIStoryboard(name: "AuthLogin", bundle: nil)
+        let viewController = storyboard.instantiateViewControllerWithIdentifier("Auth")
+        let navigationController = UINavigationController(rootViewController: viewController)
+        window?.rootViewController = navigationController
+    }
+    
+    func showProfileViewControllerWithUid(uid: String) -> Void {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateInitialViewController()
+        window?.rootViewController = viewController
     }
 
 }
