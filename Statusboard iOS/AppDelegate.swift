@@ -16,7 +16,6 @@ import RxCocoa
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    let usersRef = Firebase(url: "https://shining-heat-4070.firebaseio.com/users")
     let firebaseService = FirebaseService()
     var disposeBag = DisposeBag()
 
@@ -44,12 +43,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 self.showAuthViewController()
             }
         }
-        
-        usersRef.observeEventType(.Value, withBlock: { [unowned self] snapshot in
-            print("snapshot: \(snapshot)")
-            
-            self.usersRef.removeAllObservers()
-        })
 
         return true
     }
@@ -62,9 +55,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func showProfileViewControllerWithUid(uid: String) -> Void {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let viewController = storyboard.instantiateInitialViewController()
-        window?.rootViewController = viewController
+        
+        let usersRef = Firebase(url: "https://shining-heat-4070.firebaseio.com/users/\(uid)")
+        
+        usersRef.observeEventType(.Value, withBlock: { [unowned self] snapshot in
+            print(snapshot)
+            
+            guard let user = User(snap: snapshot) else { return }
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if let viewController = storyboard.instantiateViewControllerWithIdentifier("Profile") as? ProfileViewController {
+                viewController.user = user
+                self.window?.rootViewController = viewController
+            }
+        })
     }
 
 }

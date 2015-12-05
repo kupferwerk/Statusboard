@@ -17,10 +17,18 @@ internal class ProfileViewController: UIViewController {
     @IBOutlet weak var profilePictureView: ProfilePictureView!
     @IBOutlet weak var emailTextField: UITextField!
     
+    var user: User?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Profile"
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        userNameTextField.text = user?.name
+        emailTextField.text = user?.email
     }
 
     //MARK: - IBActions

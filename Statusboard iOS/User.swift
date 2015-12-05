@@ -7,25 +7,26 @@
 //
 
 import Foundation
-import Locksmith
+import Firebase
 
 struct User {
-    let email, firstname, lastname, department, office: String
-    let available: Bool
-    let lastCheckIn: NSDate
-    let imageURL: NSURL
-}
-
-struct FirebaseAccount: ReadableSecureStorable,
-                        CreateableSecureStorable,
-                        DeleteableSecureStorable,
-                        GenericPasswordSecureStorable {
-    let uid, token: String
-
-    let service = "Firebase"
-    var account: String { return uid }
     
-    var data: [String: AnyObject] {
-        return ["token": token]
+    init?(snap: FDataSnapshot) {
+        guard let json = snap.value as? Dictionary<String, AnyObject>,
+                email = json["email"] as? String,
+                name = json["name"] as? String,
+                department = json["department"] as? String,
+                office = json["office"] as? String
+            else { return nil }
+        
+        self.email = email
+        self.name = name
+        self.department = department
+        self.office = office
     }
+    
+    let email, name, department, office: String
+//    let available: Bool
+//    let lastCheckIn: NSDate
+//    let imageURL: NSURL
 }
