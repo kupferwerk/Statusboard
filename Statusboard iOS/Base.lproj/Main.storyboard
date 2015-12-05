@@ -21,7 +21,7 @@
                         <animations/>
                         <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Office Status" id="hfY-hk-Nk4"/>
+                    <tabBarItem key="tabBarItem" title="Office Status" image="officeStatusIcon" id="hfY-hk-Nk4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -91,7 +91,7 @@
                                                 <animations/>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="KfL-ZU-kQV" userLabel="Profile Stack View">
-                                                <rect key="frame" x="50" y="75" width="500" height="172"/>
+                                                <rect key="frame" x="50" y="75" width="500" height="208"/>
                                                 <subviews>
                                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8mg-Po-50W" customClass="ProfilePictureView" customModule="Statusboard" customModuleProvider="target">
                                                         <rect key="frame" x="200" y="0.0" width="100" height="100"/>
@@ -108,7 +108,7 @@
                                                             </userDefinedRuntimeAttribute>
                                                         </userDefinedRuntimeAttributes>
                                                     </view>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Sebastian Friedrich" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RPg-ii-kvo">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="name" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="RPg-ii-kvo">
                                                         <rect key="frame" x="0.0" y="106" width="500" height="30"/>
                                                         <animations/>
                                                         <constraints>
@@ -117,8 +117,17 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18x-eY-0AC">
+                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="email" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="5n3-mo-JF3">
                                                         <rect key="frame" x="0.0" y="142" width="500" height="30"/>
+                                                        <animations/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" priority="999" constant="30" id="pqh-mU-EGD"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits"/>
+                                                    </textField>
+                                                    <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="18x-eY-0AC">
+                                                        <rect key="frame" x="0.0" y="178" width="500" height="30"/>
                                                         <animations/>
                                                         <state key="normal" title="iOS"/>
                                                         <connections>
@@ -130,6 +139,7 @@
                                                 <constraints>
                                                     <constraint firstItem="RPg-ii-kvo" firstAttribute="width" secondItem="KfL-ZU-kQV" secondAttribute="width" id="6HV-cf-swo"/>
                                                     <constraint firstItem="18x-eY-0AC" firstAttribute="leading" secondItem="KfL-ZU-kQV" secondAttribute="leading" id="PnG-mN-YfB"/>
+                                                    <constraint firstItem="5n3-mo-JF3" firstAttribute="width" secondItem="KfL-ZU-kQV" secondAttribute="width" id="gUM-4n-T8q"/>
                                                     <constraint firstAttribute="trailing" secondItem="18x-eY-0AC" secondAttribute="trailing" id="hdB-1X-d5j"/>
                                                 </constraints>
                                             </stackView>
@@ -198,6 +208,7 @@
                     <connections>
                         <outlet property="contentView" destination="MPJ-7G-iNa" id="TmL-fT-vV9"/>
                         <outlet property="departmentButton" destination="18x-eY-0AC" id="gKA-JE-KIc"/>
+                        <outlet property="emailTextField" destination="5n3-mo-JF3" id="SpV-5G-fTs"/>
                         <outlet property="profilePictureView" destination="8mg-Po-50W" id="77C-Qg-DNy"/>
                         <outlet property="scrollView" destination="0HH-AD-xTP" id="NhZ-YF-Vgk"/>
                         <outlet property="userNameTextField" destination="RPg-ii-kvo" id="ebb-L5-apS"/>
@@ -207,11 +218,11 @@
             </objects>
             <point key="canvasLocation" x="1954" y="563"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Profil-->
         <scene sceneID="uV0-5B-Pzi">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="rT4-vx-dNR" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" id="vpk-JA-opj"/>
+                    <tabBarItem key="tabBarItem" title="Profil" image="profileIcon" id="vpk-JA-opj"/>
                     <toolbarItems/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="gDu-yS-781">
@@ -230,6 +241,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="officeStatusIcon" width="44" height="44"/>
         <image name="profile-photo-placeholder" width="245" height="245"/>
+        <image name="profileIcon" width="30" height="30"/>
     </resources>
 </document>
