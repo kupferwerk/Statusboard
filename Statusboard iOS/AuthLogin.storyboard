@@ -17,7 +17,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eUH-TV-3Ad">
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eUH-TV-3Ad">
                                 <rect key="frame" x="8" y="72" width="584" height="163"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OdK-6V-wai">
@@ -86,7 +86,7 @@
         <!--Konto anlegen-->
         <scene sceneID="rah-4o-fVS">
             <objects>
-                <viewController storyboardIdentifier="Auth" id="WDD-Uv-VnV" customClass="AuthViewController" customModule="Statusboard" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Auth" automaticallyAdjustsScrollViewInsets="NO" id="WDD-Uv-VnV" customClass="AuthViewController" customModule="Statusboard" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bAG-R9-d8H"/>
                         <viewControllerLayoutGuide type="bottom" id="vTx-O3-Gau"/>
@@ -95,14 +95,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k0K-UK-eP6">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="k0K-UK-eP6">
                                 <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mfm-Ro-tYf">
-                                        <rect key="frame" x="0.0" y="0.0" width="600" height="445"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="348"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lqw-48-Usv">
-                                                <rect key="frame" x="8" y="8" width="584" height="429"/>
+                                                <rect key="frame" x="8" y="44" width="584" height="296"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMe-A8-WS9">
                                                         <rect key="frame" x="0.0" y="0.0" width="584" height="20.5"/>
@@ -112,13 +112,13 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xbE-Ad-TZ7">
-                                                        <rect key="frame" x="0.0" y="28.5" width="584" height="30"/>
+                                                        <rect key="frame" x="0.0" y="28" width="584" height="30"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Passwort" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaN-uJ-IBJ">
-                                                        <rect key="frame" x="0.0" y="66.5" width="584" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="66" width="584" height="20.5"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -130,7 +130,7 @@
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firstname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jC2-Lb-2Kp">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jC2-Lb-2Kp">
                                                         <rect key="frame" x="0.0" y="133" width="584" height="20.5"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -138,67 +138,63 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R9R-gE-HHO">
-                                                        <rect key="frame" x="0.0" y="161.5" width="584" height="30"/>
-                                                        <animations/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lastname" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AYe-yl-Lze">
-                                                        <rect key="frame" x="0.0" y="199.5" width="584" height="20.5"/>
-                                                        <animations/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OvA-td-9uR">
-                                                        <rect key="frame" x="0.0" y="228" width="584" height="30"/>
+                                                        <rect key="frame" x="0.0" y="161" width="584" height="30"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Department" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="luT-yv-6ky">
-                                                        <rect key="frame" x="0.0" y="266" width="584" height="20.5"/>
+                                                        <rect key="frame" x="0.0" y="199" width="584" height="20.5"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ont-nC-m7n">
-                                                        <rect key="frame" x="0.0" y="294.5" width="584" height="30"/>
-                                                        <animations/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                        <textInputTraits key="textInputTraits"/>
-                                                    </textField>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Office" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPX-2w-h4n">
-                                                        <rect key="frame" x="0.0" y="332.5" width="584" height="20.5"/>
-                                                        <animations/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ucz-HQ-VWE">
-                                                        <rect key="frame" x="0.0" y="361" width="584" height="30"/>
+                                                        <rect key="frame" x="0.0" y="228" width="584" height="30"/>
                                                         <animations/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                         <textInputTraits key="textInputTraits"/>
                                                     </textField>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d2J-U3-FCp">
-                                                        <rect key="frame" x="0.0" y="399" width="584" height="30"/>
+                                                        <rect key="frame" x="0.0" y="266" width="584" height="30"/>
                                                         <animations/>
                                                         <state key="normal" title="Konto anlegen"/>
                                                     </button>
                                                 </subviews>
                                                 <animations/>
                                             </stackView>
+                                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="I14-EY-JJe">
+                                                <rect key="frame" x="8" y="8" width="584" height="29"/>
+                                                <animations/>
+                                                <segments>
+                                                    <segment title="New Account"/>
+                                                    <segment title="Login"/>
+                                                </segments>
+                                                <connections>
+                                                    <action selector="segmentedControlChanged:" destination="WDD-Uv-VnV" eventType="valueChanged" id="Jf2-O1-6oa"/>
+                                                </connections>
+                                            </segmentedControl>
                                         </subviews>
                                         <animations/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="lqw-48-Usv" secondAttribute="trailing" constant="8" id="60H-zd-Zel"/>
+                                            <constraint firstItem="SMe-A8-WS9" firstAttribute="top" secondItem="I14-EY-JJe" secondAttribute="bottom" constant="8" id="VSi-2c-TUU"/>
+                                            <constraint firstAttribute="trailing" secondItem="I14-EY-JJe" secondAttribute="trailing" constant="8" id="Wes-XZ-2L0"/>
+                                            <constraint firstItem="I14-EY-JJe" firstAttribute="top" secondItem="Mfm-Ro-tYf" secondAttribute="top" constant="8" id="a69-8c-Zya"/>
                                             <constraint firstAttribute="bottom" secondItem="lqw-48-Usv" secondAttribute="bottom" constant="8" id="hMF-uf-ksd"/>
-                                            <constraint firstItem="lqw-48-Usv" firstAttribute="top" secondItem="Mfm-Ro-tYf" secondAttribute="top" constant="8" id="wqb-xR-dDy"/>
+                                            <constraint firstItem="I14-EY-JJe" firstAttribute="leading" secondItem="Mfm-Ro-tYf" secondAttribute="leading" constant="8" id="iVF-5g-5mw"/>
+                                            <constraint firstItem="lqw-48-Usv" firstAttribute="top" secondItem="I14-EY-JJe" secondAttribute="bottom" constant="8" id="kvc-Us-hRS"/>
+                                            <constraint firstItem="lqw-48-Usv" firstAttribute="top" secondItem="Mfm-Ro-tYf" secondAttribute="top" constant="70" id="wqb-xR-dDy"/>
                                             <constraint firstItem="lqw-48-Usv" firstAttribute="leading" secondItem="Mfm-Ro-tYf" secondAttribute="leading" constant="8" id="zhq-j8-bRn"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="VSi-2c-TUU"/>
+                                                <exclude reference="wqb-xR-dDy"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <animations/>
@@ -225,12 +221,14 @@
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="createButton" destination="d2J-U3-FCp" id="ePJ-MY-9VR"/>
+                        <outlet property="departmentLabel" destination="luT-yv-6ky" id="hab-zL-ct7"/>
                         <outlet property="departmentTextField" destination="ont-nC-m7n" id="l7a-ax-Fin"/>
                         <outlet property="emailTextField" destination="xbE-Ad-TZ7" id="8fK-hX-4GP"/>
-                        <outlet property="firstnameTextField" destination="R9R-gE-HHO" id="CAt-Ma-Wpx"/>
-                        <outlet property="lastnameTextField" destination="OvA-td-9uR" id="EKD-Px-oy0"/>
-                        <outlet property="officeTextField" destination="ucz-HQ-VWE" id="BTj-wS-gLc"/>
+                        <outlet property="nameLabel" destination="jC2-Lb-2Kp" id="ijz-RE-xWi"/>
+                        <outlet property="nameTextField" destination="R9R-gE-HHO" id="INi-Dn-IHT"/>
                         <outlet property="passwordTextField" destination="XMY-pV-7df" id="eIT-yv-Ngp"/>
+                        <outlet property="scrollView" destination="k0K-UK-eP6" id="m9i-h4-4dC"/>
+                        <outlet property="segmentedControl" destination="I14-EY-JJe" id="x95-tc-Q1G"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FPm-Qd-xw6" userLabel="First Responder" sceneMemberID="firstResponder"/>
