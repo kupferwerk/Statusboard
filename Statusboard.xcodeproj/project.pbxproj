@@ -7,47 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		14BDB671C5FA449088B0546F /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E486AB75DA8D522C02FA9827 /* Pods.framework */; };
 		1B039BB6CC60BED340780FEC /* Pods_Statusboard_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 668672ADD6462AE45914EACF /* Pods_Statusboard_iOS.framework */; };
-		3EF6C7901C1257A90060A327 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF6C78F1C1257A90060A327 /* ProfileImageView.swift */; };
 		3EF6C7911C1257A90060A327 /* ProfileImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EF6C78F1C1257A90060A327 /* ProfileImageView.swift */; };
-		4F198862F7E5096E3BEB912F /* Pods_Statusboard_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DC240BBF7BAEB9EC3993A48 /* Pods_Statusboard_tvOS.framework */; };
 		520CEFDB1C12290E001C2C8B /* OfficeLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CEFDA1C12290E001C2C8B /* OfficeLocations.swift */; };
-		520CEFDC1C122A5E001C2C8B /* OfficeLocations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CEFDA1C12290E001C2C8B /* OfficeLocations.swift */; };
-		520CEFE21C1242D8001C2C8B /* OfficeLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 520CEFE11C1242D8001C2C8B /* OfficeLocationManager.swift */; };
 		52A105C11C12096700D07AA7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A105C01C12096700D07AA7 /* AppDelegate.swift */; };
 		52A105C31C12096700D07AA7 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A105C21C12096700D07AA7 /* ProfileViewController.swift */; };
 		52A105C61C12096700D07AA7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A105C41C12096700D07AA7 /* Main.storyboard */; };
 		52A105C81C12096700D07AA7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52A105C71C12096700D07AA7 /* Assets.xcassets */; };
 		52A105CB1C12096700D07AA7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A105C91C12096700D07AA7 /* LaunchScreen.storyboard */; };
-		52A105D21C120A9800D07AA7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A105D11C120A9800D07AA7 /* Reusable.swift */; };
 		52A105D31C120B0600D07AA7 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A105D11C120A9800D07AA7 /* Reusable.swift */; };
 		52A105D81C120B4B00D07AA7 /* EmployeeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A105D41C120B2F00D07AA7 /* EmployeeCollectionViewCell.swift */; };
 		52A105D91C120C9600D07AA7 /* EmployeeCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 52A105D61C120B4300D07AA7 /* EmployeeCollectionViewCell.xib */; };
-		5AADB3B81C11DDA500DE19AE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AADB3B71C11DDA500DE19AE /* AppDelegate.swift */; };
-		5AADB3BA1C11DDA500DE19AE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AADB3B91C11DDA500DE19AE /* ViewController.swift */; };
-		5AADB3BD1C11DDA500DE19AE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AADB3BB1C11DDA500DE19AE /* Main.storyboard */; };
-		5AADB3BF1C11DDA500DE19AE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5AADB3BE1C11DDA500DE19AE /* Assets.xcassets */; };
 		5AADB3D41C12240E00DE19AE /* AuthLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5AADB3D11C12240E00DE19AE /* AuthLogin.storyboard */; };
 		5AADB3D51C12240E00DE19AE /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AADB3D21C12240E00DE19AE /* AuthViewController.swift */; };
 		5AADB3D61C12240E00DE19AE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AADB3D31C12240E00DE19AE /* LoginViewController.swift */; };
 		5AADB3D91C12322B00DE19AE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5AADB3D81C12322B00DE19AE /* User.swift */; };
-		86C669B81C1245050028E1CB /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C669B71C1245050028E1CB /* FirebaseService.swift */; };
 		86C669B91C1245050028E1CB /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86C669B71C1245050028E1CB /* FirebaseService.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		5AADB3C91C11F82900DE19AE /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		17D327155129D78685F1AF45 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -55,7 +31,6 @@
 		3EF6C78F1C1257A90060A327 /* ProfileImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileImageView.swift; sourceTree = "<group>"; };
 		518E37402788759718BA7DC1 /* Pods_Statusboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Statusboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		520CEFDA1C12290E001C2C8B /* OfficeLocations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficeLocations.swift; sourceTree = "<group>"; };
-		520CEFE11C1242D8001C2C8B /* OfficeLocationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfficeLocationManager.swift; sourceTree = "<group>"; };
 		52A105BE1C12096700D07AA7 /* Statusboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Statusboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52A105C01C12096700D07AA7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52A105C21C12096700D07AA7 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -66,12 +41,6 @@
 		52A105D11C120A9800D07AA7 /* Reusable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 		52A105D41C120B2F00D07AA7 /* EmployeeCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EmployeeCollectionViewCell.swift; path = "../Statusboard Shared/EmployeeCollectionViewCell.swift"; sourceTree = "<group>"; };
 		52A105D61C120B4300D07AA7 /* EmployeeCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EmployeeCollectionViewCell.xib; path = "../Statusboard Shared/EmployeeCollectionViewCell.xib"; sourceTree = "<group>"; };
-		5AADB3B41C11DDA500DE19AE /* Statusboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Statusboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5AADB3B71C11DDA500DE19AE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5AADB3B91C11DDA500DE19AE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5AADB3BC1C11DDA500DE19AE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5AADB3BE1C11DDA500DE19AE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5AADB3C01C11DDA500DE19AE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5AADB3D11C12240E00DE19AE /* AuthLogin.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = AuthLogin.storyboard; sourceTree = "<group>"; };
 		5AADB3D21C12240E00DE19AE /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		5AADB3D31C12240E00DE19AE /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -97,22 +66,12 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5AADB3B11C11DDA500DE19AE /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				4F198862F7E5096E3BEB912F /* Pods_Statusboard_tvOS.framework in Frameworks */,
-				14BDB671C5FA449088B0546F /* Pods.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		52A105BF1C12096700D07AA7 /* Statusboard iOS */ = {
 			isa = PBXGroup;
 			children = (
-				520CEFE11C1242D8001C2C8B /* OfficeLocationManager.swift */,
 				5AADB3D71C12241800DE19AE /* Auth */,
 				86C669B71C1245050028E1CB /* FirebaseService.swift */,
 				52A105C01C12096700D07AA7 /* AppDelegate.swift */,
@@ -142,7 +101,6 @@
 			isa = PBXGroup;
 			children = (
 				52A105D01C12099D00D07AA7 /* Statusboard Shared */,
-				5AADB3B61C11DDA500DE19AE /* Statusboard tvOS */,
 				52A105BF1C12096700D07AA7 /* Statusboard iOS */,
 				5AADB3B51C11DDA500DE19AE /* Products */,
 				5DC81264101856CEA3F6F83A /* Pods */,
@@ -153,22 +111,9 @@
 		5AADB3B51C11DDA500DE19AE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5AADB3B41C11DDA500DE19AE /* Statusboard.app */,
 				52A105BE1C12096700D07AA7 /* Statusboard.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		5AADB3B61C11DDA500DE19AE /* Statusboard tvOS */ = {
-			isa = PBXGroup;
-			children = (
-				5AADB3B71C11DDA500DE19AE /* AppDelegate.swift */,
-				5AADB3B91C11DDA500DE19AE /* ViewController.swift */,
-				5AADB3BB1C11DDA500DE19AE /* Main.storyboard */,
-				5AADB3BE1C11DDA500DE19AE /* Assets.xcassets */,
-				5AADB3C01C11DDA500DE19AE /* Info.plist */,
-			);
-			path = "Statusboard tvOS";
 			sourceTree = "<group>";
 		};
 		5AADB3D71C12241800DE19AE /* Auth */ = {
@@ -230,27 +175,6 @@
 			productReference = 52A105BE1C12096700D07AA7 /* Statusboard.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5AADB3B31C11DDA500DE19AE /* Statusboard tvOS */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5AADB3C31C11DDA500DE19AE /* Build configuration list for PBXNativeTarget "Statusboard tvOS" */;
-			buildPhases = (
-				C8BA4F7142BAD1C2CC4F03DE /* Check Pods Manifest.lock */,
-				5AADB3B01C11DDA500DE19AE /* Sources */,
-				5AADB3B11C11DDA500DE19AE /* Frameworks */,
-				5AADB3B21C11DDA500DE19AE /* Resources */,
-				5AADB3C91C11F82900DE19AE /* Embed Frameworks */,
-				A64D8A130AF8199A07FAED56 /* Embed Pods Frameworks */,
-				F47C15C1CDE44CEE27F27AFF /* Copy Pods Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = "Statusboard tvOS";
-			productName = Statusboard;
-			productReference = 5AADB3B41C11DDA500DE19AE /* Statusboard.app */;
-			productType = "com.apple.product-type.application";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -263,10 +187,6 @@
 				TargetAttributes = {
 					52A105BD1C12096700D07AA7 = {
 						CreatedOnToolsVersion = 7.1.1;
-					};
-					5AADB3B31C11DDA500DE19AE = {
-						CreatedOnToolsVersion = 7.1.1;
-						DevelopmentTeam = MB54BUP56S;
 					};
 				};
 			};
@@ -283,7 +203,6 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5AADB3B31C11DDA500DE19AE /* Statusboard tvOS */,
 				52A105BD1C12096700D07AA7 /* Statusboard iOS */,
 			);
 		};
@@ -299,15 +218,6 @@
 				52A105C81C12096700D07AA7 /* Assets.xcassets in Resources */,
 				52A105D91C120C9600D07AA7 /* EmployeeCollectionViewCell.xib in Resources */,
 				52A105C61C12096700D07AA7 /* Main.storyboard in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AADB3B21C11DDA500DE19AE /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5AADB3BF1C11DDA500DE19AE /* Assets.xcassets in Resources */,
-				5AADB3BD1C11DDA500DE19AE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -359,51 +269,6 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Statusboard iOS/Pods-Statusboard iOS-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A64D8A130AF8199A07FAED56 /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		C8BA4F7142BAD1C2CC4F03DE /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		F47C15C1CDE44CEE27F27AFF /* Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Statusboard tvOS/Pods-Statusboard tvOS-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -419,22 +284,8 @@
 				86C669B91C1245050028E1CB /* FirebaseService.swift in Sources */,
 				5AADB3D51C12240E00DE19AE /* AuthViewController.swift in Sources */,
 				52A105C31C12096700D07AA7 /* ProfileViewController.swift in Sources */,
-				520CEFE21C1242D8001C2C8B /* OfficeLocationManager.swift in Sources */,
 				52A105C11C12096700D07AA7 /* AppDelegate.swift in Sources */,
 				5AADB3D91C12322B00DE19AE /* User.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5AADB3B01C11DDA500DE19AE /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3EF6C7901C1257A90060A327 /* ProfileImageView.swift in Sources */,
-				520CEFDC1C122A5E001C2C8B /* OfficeLocations.swift in Sources */,
-				52A105D21C120A9800D07AA7 /* Reusable.swift in Sources */,
-				5AADB3BA1C11DDA500DE19AE /* ViewController.swift in Sources */,
-				5AADB3B81C11DDA500DE19AE /* AppDelegate.swift in Sources */,
-				86C669B81C1245050028E1CB /* FirebaseService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,14 +306,6 @@
 				52A105CA1C12096700D07AA7 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		5AADB3BB1C11DDA500DE19AE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				5AADB3BC1C11DDA500DE19AE /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -583,40 +426,6 @@
 			};
 			name = Release;
 		};
-		5AADB3C41C11DDA500DE19AE /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17D327155129D78685F1AF45 /* Pods.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor",
-				);
-				INFOPLIST_FILE = "Statusboard tvOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kupferwerk.Statusboard;
-				PRODUCT_NAME = Statusboard;
-			};
-			name = Debug;
-		};
-		5AADB3C51C11DDA500DE19AE /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DDFD7E90C441E35677052A6 /* Pods.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Vendor",
-				);
-				INFOPLIST_FILE = "Statusboard tvOS/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.kupferwerk.Statusboard;
-				PRODUCT_NAME = Statusboard;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -634,15 +443,6 @@
 			buildConfigurations = (
 				5AADB3C11C11DDA500DE19AE /* Debug */,
 				5AADB3C21C11DDA500DE19AE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5AADB3C31C11DDA500DE19AE /* Build configuration list for PBXNativeTarget "Statusboard tvOS" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5AADB3C41C11DDA500DE19AE /* Debug */,
-				5AADB3C51C11DDA500DE19AE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
