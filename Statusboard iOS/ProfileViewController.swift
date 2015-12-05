@@ -12,20 +12,44 @@ internal class ProfileViewController: UIViewController {
 
     @IBOutlet weak var scrollView: UIScrollView!
     @IBOutlet weak var contentView: UIView!
+    @IBOutlet weak var userNameTextField: UITextField!
+    @IBOutlet weak var departmentButton: UIButton!
+    @IBOutlet weak var profilePictureView: ProfilePictureView!
     
-//    override func viewDidLayoutSubviews() {
-//        let scrollViewBounds = scrollView.bounds
-//        
-//        var scrollViewInsets = UIEdgeInsetsZero
-//        scrollViewInsets.top = scrollViewBounds.size.height/2.0;
-//        scrollViewInsets.top -= contentView.bounds.size.height/2.0;
-//        
-//        scrollViewInsets.bottom = scrollViewBounds.size.height/2.0
-//        scrollViewInsets.bottom -= contentView.bounds.size.height/2.0;
-//        scrollViewInsets.bottom += 1
-//        
-//        scrollView.contentInset = scrollViewInsets
-//    }
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.title = "Profile"
+    }
+
+    //MARK: - IBActions
+    @IBAction func changeDepartment(sender: AnyObject) {
+        print("Department")
+    }
+    
+    @IBAction func switchEditMode(sender: AnyObject) {
+        self.setEditing(!editing, animated: true)
+    }
+
+    
+    override func setEditing(editing: Bool, animated: Bool) {
+        super.setEditing(editing, animated: animated)
+        if editing {
+            navigationItem.setRightBarButtonItem(UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: "switchEditMode:") , animated: true)
+            userNameTextField.enabled = true
+            userNameTextField.borderStyle = .RoundedRect
+            departmentButton.enabled = true
+            profilePictureView.isEditing = true
+
+        } else {
+            navigationItem.setRightBarButtonItem(UIBarButtonItem(barButtonSystemItem: .Edit, target: self, action: "switchEditMode:") , animated: true)
+            userNameTextField.enabled = false
+            userNameTextField.borderStyle = .None
+            departmentButton.enabled = false
+            profilePictureView.isEditing = false
+
+        }
+    }
+    
     
     
     @IBAction func unwindToProfile(sender: UIStoryboardSegue) {
