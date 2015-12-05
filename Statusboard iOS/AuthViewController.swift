@@ -10,6 +10,7 @@ import UIKit
 import Firebase
 import RxSwift
 import RxCocoa
+import Locksmith
 
 class AuthViewController: UIViewController {
 
@@ -42,8 +43,7 @@ class AuthViewController: UIViewController {
                 return self.firebaseService.authUser(email, password: password)
             })
             .map({ (authData) -> FAuthData in
-                let account = FirebaseAccount(uid: authData.uid, token: authData.token)
-                try account.createInSecureStore()
+                
                 return authData
             })
         
