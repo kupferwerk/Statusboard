@@ -15,6 +15,8 @@ internal class ProfileViewController: UIViewController {
     @IBOutlet weak var userNameTextField: UITextField!
     @IBOutlet weak var departmentButton: UIButton!
     @IBOutlet weak var profilePictureView: ProfilePictureView!
+    @IBOutlet weak var emailTextField: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,14 +41,16 @@ internal class ProfileViewController: UIViewController {
             userNameTextField.borderStyle = .RoundedRect
             departmentButton.enabled = true
             profilePictureView.isEditing = true
-
+            emailTextField.enabled = true
+            emailTextField.borderStyle = .RoundedRect
         } else {
             navigationItem.setRightBarButtonItem(UIBarButtonItem(barButtonSystemItem: .Edit, target: self, action: "switchEditMode:") , animated: true)
             userNameTextField.enabled = false
             userNameTextField.borderStyle = .None
             departmentButton.enabled = false
             profilePictureView.isEditing = false
-
+            emailTextField.enabled = false
+            emailTextField.borderStyle = .None
         }
     }
     
